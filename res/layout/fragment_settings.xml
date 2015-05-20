@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/settings_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_margin="10dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/settings_push_tips"
+            style="@style/TextTheme.tipstheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="接收推送消息"
+            android:layout_marginLeft="10dp" />
+
+        <CheckBox
+            android:id="@+id/settings_push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/selector_push_switch"
+            android:checked="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_settings_item_down"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/settings_cache_tips"
+            style="@style/TextTheme.tipstheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="清除图片缓存"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_settings_item_down"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/settings_date_tips"
+            style="@style/TextTheme.tipstheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="检查更新"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/settings_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_settings_item_down"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/tv_settings_feedback"
+            style="@style/TextTheme.tipstheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="反馈建议"
+            android:layout_marginLeft="10dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_logout"
+        style="@style/TextTheme.tipstheme_buttontext"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_logout"
+        android:gravity="center"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip"
+        android:text="退出登录" />
+
+</LinearLayout>
